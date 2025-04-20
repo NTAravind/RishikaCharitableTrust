@@ -2,7 +2,7 @@ import t1 from '../images/team/Untitled.jpg';
 import t2 from '../images/team/1.jpg';
 import t3 from '../images/team/2.jpg';
 import t4 from '../images/team/3.jpg';
-import { Instagram } from 'lucide-react';
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
 
 export default function TeamSection() {
   const teamData = [
@@ -48,7 +48,8 @@ export default function TeamSection() {
             <h1 className="font-medium text-lg">{teamData[0].name}</h1>
             <p className="text-xs text-gray-700 sm:text-sm lg:text-base">{teamData[0].role}</p>
             <p className="text-xs text-gray-700 sm:text-sm lg:text-base">Meet the founder of Rishika</p>
-            <a
+        <div className='flex flex-row gap-x-2 mt-2'>
+        <a
               href={teamData[0].instagram}
               target="_blank"
               rel="noopener noreferrer"
@@ -56,6 +57,24 @@ export default function TeamSection() {
             >
               <Instagram className="w-5 h-5" />
             </a>
+            <a
+              href='https://www.facebook.com/share/1J2V6hzV5y/?mibextid=wwXIfr'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 inline-block text-blue-500 hover:text-blue-700"
+            >
+              <Facebook className="w-5 h-5" />
+            </a>
+            <a
+              href='https://www.linkedin.com/in/sumanthsharma-750?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app'
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-1 inline-block text-blue-500 hover:text-blue-700"
+            >
+              <Linkedin className="w-5 h-5" />
+            </a>
+            
+        </div>
           </div>
         </div>
       </div>

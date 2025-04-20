@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { HashLink } from 'react-router-hash-link';
+import logo from'../images/logo.png';
 const scrollToFormAndDonate = () => {
   const formSection = document.querySelector('.f'); // the form container class
   if (formSection) {
@@ -17,24 +18,27 @@ function Navbar() {
   };
 
   return (
-    <div className="nav flex justify-between items-center text-[1.2rem] w-full px-6 py-4 pb-3">
-      <div className="brand font-bold w-[10rem]">
-        <a href="/">Rishika Charitable Trust</a>
+    <div className="nav flex justify-between items-center text-[1.2rem] w-full px-6 py-4 pb-3 max-sm:px-2">
+      <div className="brand font-bold w-[15rem]">
+      <div className='flex flex-row '>
+      <img src={logo} className='h-15 w-15 mx-1' />
+      <a href="/">Rishika Charitable Trust</a>
+      </div>
       </div>
       
       {/* Desktop Navigation - Preserved exactly as original */}
       <div className="links hidden md:flex flex-row gap-20">
         <a href="/gallery">Gallery</a>
-        <HashLink smooth to="/#about">About Us</HashLink>
+        <HashLink smooth to="/#stry">About Us</HashLink>
         <HashLink smooth to="/#prog">Initiatives</HashLink>
       </div>
       
       <div className="hidden md:block">
-        <a href="/donate">
-          <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-2" onClick={scrollToFormAndDonate}>
+     
+          <button className="dtn bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-2" onClick={scrollToFormAndDonate}>
             Donate
           </button>
-        </a>
+     
       </div>
       
       {/* Mobile Menu Button */}
@@ -53,7 +57,7 @@ function Navbar() {
             <HashLink smooth to="/#about">About Us</HashLink>
             <HashLink smooth to="/#prog">Initiatives</HashLink>
             
-              <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-2 w-full" onClick={scrollToFormAndDonate}>
+              <button className="dtn bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 py-2 w-full" onClick={scrollToFormAndDonate}>
                 Donate
               </button>
             

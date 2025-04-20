@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import HomePage from "./pages/home";
 import Footer from "./components/footer";
 import WhatsAppButton from "./components/wa";
+import Gallery from './pages/gallery';
 function App(){
   return(
 <>
@@ -13,7 +14,7 @@ function App(){
   
 <Routes>
   <Route path="/" element={<HomePage/>}></Route>
-  
+  <Route path="/Gallery" element={<Gallery/>}></Route>
 </Routes>
 
 <Footer/>

@@ -3,6 +3,15 @@
 *{
   font-family: "ubuntu",sans-serif;
 }
+.whatsapp-btn::after {
+  animation: none !important;
+  content:none !important;
+}
+.dtn ::after {
+  animation: none !important;
+  content:none !important;
+}
+
 a {
   position: relative;
   display: inline-block;
@@ -47,7 +56,4 @@ a:hover::after {
 .animate-slide-in {
   animation: slide-in 0.3s ease-out forwards;
  
-}
-.whatsapp-btn {
-  animation: none !important;
 }

@@ -34,13 +34,13 @@ export default function Footer() {
         <div className="flex flex-col items-center md:items-end">
           <span className="text-sm font-medium mb-4">Connect With Us</span>
           <div className="flex gap-6">
-            <a href="https://www.facebook.com/share/1J2V6hzV5y/?mibextid=wwXIfr" target="_blank" className="text-white hover:text-[var(--color-accent)] transition">
+            <a href="https://www.facebook.com/RishikaChartiableTrust/" target="_blank" className="text-white hover:text-[var(--color-accent)] transition">
               <Facebook className="w-6 h-6" />
             </a>
-            <a href="https://www.instagram.com/sumanthshruthii?igsh=NXBjdXdwdGN2bWdu" target="_blank" className="text-white hover:text-[var(--color-accent)] transition">
+            <a href="https://www.instagram.com/rishika.charitabletrust/?hl=en" target="_blank" className="text-white hover:text-[var(--color-accent)] transition">
               <Instagram className="w-6 h-6" />
             </a>
-            <a href="https://www.linkedin.com/in/sumanthsharma-750?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" className="text-white hover:text-[var(--color-accent)] transition">
+            <a href="https://in.linkedin.com/company/rishika-foundation-in" target="_blank" className="text-white hover:text-[var(--color-accent)] transition">
               <Linkedin className="w-6 h-6" />
             </a>
           </div>

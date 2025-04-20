@@ -1,9 +1,10 @@
 import Butn from "../components/button";
 import ngo from '../images/pat.png';
 import TeamSection from "../components/team";
-
+import Carousel from "../components/corausel";
 import {CookingPot, Cross, CircleChevronRight, BookOpenText, School, HeartHandshake, Landmark, UtensilsCrossed,
-  Shirt, Droplet, Stethoscope, Sprout, ToyBrick, Recycle, BookOpenCheck, Home} from 'lucide-react';
+  Shirt, Droplet, Stethoscope, Sprout, ToyBrick, Recycle, BookOpenCheck, Home,LibraryBig ,
+  Trash} from 'lucide-react';
 import VolunteerSection from "../components/forms";
 
 const scrollToVolunteerForm = () => {
@@ -44,7 +45,7 @@ const HomePage = () => {
       <section className="hero grid grid-cols-3 max-sm:grid-cols-1 grid-rows-3 max-sm:grid-rows-auto mt-5 gap-2">
         <div className="col-start-1 font-semibold col-span-2 max-sm:col-span-1 row-start-1 row-span-2 max-sm:row-span-1 bg-blue-50 bg-contain bg-repeat p-15 max-sm:p-4 rounded-2xl self-center">
           <h1 className="font-semibold text-6xl max-sm:text-3xl leading-tight">
-            Empowering Communities Spreading Happiness, Throughout Karnataka
+            Empowering Communities & Spreading Happiness, Throughout Karnataka
           </h1>
           <div className="flex flex-row mt-4 justify-end">
             <Butn text="Donate" onClick={scrollToFormAndDonate} />
@@ -57,7 +58,7 @@ const HomePage = () => {
 
         <div className="col-start-1 max-sm:col-start-1 row-start-3 max-sm:row-start-3 bg-[url('./images/ud.png')] bg-cover rounded-2xl p-5 max-sm:p-3">
           <div className="text-2xl  font-semibold mt-3 max-sm:h-full max-sm:flex max-sm:flex-col max-sm:justify-center max-sm:text-[1.3rem]">
-            Serve with compassion—donate food, clothing, and health support to communities across Karnataka.
+            Serve with compassion—donate food, educate the communities, and give health support to communities across Karnataka.
             <div className="flex flex-row gap-10 justify-end"></div>
           </div>
           <div className="b text-2xl"></div>
@@ -79,6 +80,10 @@ const HomePage = () => {
         </div>
       </section>
 
+       <div className="my-5 max-sm:my-2 ">
+        <h1 className="text-5xl font-medium text-center my-2 max-sm:text-4xl">Our Collabs</h1>
+       <Carousel  />
+       </div>
       {/* #################################################################################################################################### */}
 
       <section className="stry">
@@ -98,7 +103,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="col-start-5 max-sm:col-start-1 col-span-2 max-sm:col-span-1 row-start-2 max-sm:row-start-3 row-span-3 max-sm:row-span-1 bg-blue-300 rounded-2xl p-8 max-sm:p-4 text-[1.3rem] max-sm:text-base flex flex-col justify-between gap-6 max-sm:gap-1 max-sm:my-2 max-sm:py-10">
-            <p>A world where every individual has equal access to opportunities for growth, education, and well-being, regardless of their socioeconomic background.</p>
+            <p>Empowering Individuals  through Anna (food),Aarogya (health) and Akshara (education) Creates a Ripple Effect of change.</p>
             <div className="flex flex-row justify-between px-10 max-sm:px-2">
               <div className="flex flex-col gap-2 items-center">
                 <CookingPot size={48} className="max-sm:w-8 max-sm:h-8" /><h1 className="text-[1.3rem] max-sm:text-sm font-medium">Anna</h1>
@@ -107,7 +112,7 @@ const HomePage = () => {
                 <BookOpenText size={48} className="max-sm:w-8 max-sm:h-8" /><h1 className="text-[1.3rem] max-sm:text-sm font-medium">Akshara</h1>
               </div>
               <div className="flex flex-col gap-2 items-center">
-                <Cross size={48} className="max-sm:w-8 max-sm:h-8" /><h1 className="text-[1.3rem] max-sm:text-sm font-medium">Aroghya</h1>
+                <Cross size={48} className="max-sm:w-8 max-sm:h-8" /><h1 className="text-[1.3rem] max-sm:text-sm font-medium">Aarogya</h1>
               </div>
             </div>
           </div>
@@ -178,7 +183,7 @@ const HomePage = () => {
               <div className="text-[var(--color-secondary)]"><Home size={48} className="max-sm:w-8 max-sm:h-8" /></div>
               <div>
                 <h3 className="font-semibold text-[var(--color-primary)]">Grama Pravesha</h3>
-                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Village outreach programs.</p>
+                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Improving Infrastructure in government schools</p>
               </div>
             </div>
 
@@ -186,8 +191,8 @@ const HomePage = () => {
             <div className="col-span-1 row-span-2 max-sm:row-span-1 rounded-xl p-4 max-sm:p-3 flex flex-col justify-between max-sm:mb-2" style={{ backgroundColor: 'var(--color-accent)' }}>
               <div className="text-[var(--color-secondary)]"><Droplet size={48} className="max-sm:w-8 max-sm:h-8" /></div>
               <div>
-                <h3 className="font-semibold text-[var(--color-primary)]">Mutthu Project</h3>
-                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Awareness about woman Sanitary Health.</p>
+                <h3 className="font-semibold text-[var(--color-primary)]">Muttu Project</h3>
+                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Raising awareness about menstrual Health and providing Sanitary Products  </p>
               </div>
             </div>
 
@@ -196,7 +201,7 @@ const HomePage = () => {
               <ToyBrick className="text-[var(--color-secondary)] max-sm:w-8 max-sm:h-8" size={48} />
               <div>
                 <h3 className="font-semibold text-[var(--color-primary)]">Amruth Khel</h3>
-                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Sustainable playgrounds.</p>
+                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Reviving traditional games to promote cultural heritage</p>
               </div>
             </div>
 
@@ -205,24 +210,24 @@ const HomePage = () => {
               <Recycle className="text-[var(--color-secondary)] max-sm:w-8 max-sm:h-8" size={48} />
               <div>
                 <h3 className="font-semibold text-[var(--color-primary)]">E-Waste Collection</h3>
-                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Recycling for the environment.</p>
+                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Encouraging responsible disposal of electronic waste</p>
               </div>
             </div>
 
             {/* Bottom Cards */}
             <div className="col-span-1 row-span-1 rounded-xl p-4 max-sm:p-3 flex items-start gap-3 max-sm:mb-2" style={{ backgroundColor: 'var(--color-accent)' }}>
-              <Stethoscope className="text-[var(--color-secondary)] max-sm:w-8 max-sm:h-8" size={48} />
+              <Trash className="text-[var(--color-secondary)] max-sm:w-8 max-sm:h-8" size={48} />
               <div>
-                <h3 className="font-semibold text-[var(--color-primary)]">Arogya Daana</h3>
-                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Health camps & checkups.</p>
+                <h3 className="font-semibold text-[var(--color-primary)]">CleanUp Yatra</h3>
+                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Organizing cleanliness Drives to promote Hygiene.</p>
               </div>
             </div>
 
             <div className="col-span-1 row-span-1 rounded-xl p-4 max-sm:p-3 flex items-start gap-3 max-sm:mb-2" style={{ backgroundColor: 'var(--color-accent)' }}>
               <Sprout className="text-[var(--color-secondary)] max-sm:w-8 max-sm:h-8" size={48} />
               <div>
-                <h3 className="font-semibold text-[var(--color-primary)]">Mutru Project</h3>
-                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Youth in agriculture.</p>
+                <h3 className="font-semibold text-[var(--color-primary)]">Plantation Drive</h3>
+                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Contributing to Environmental Sustainability</p>
               </div>
             </div>
 
@@ -235,10 +240,10 @@ const HomePage = () => {
             </div>
 
             <div className="col-span-1 row-span-1 rounded-xl p-4 max-sm:p-3 flex items-start gap-3 max-sm:mb-2" style={{ backgroundColor: 'var(--color-accent)' }}>
-              <UtensilsCrossed className="text-[var(--color-secondary)] max-sm:w-8 max-sm:h-8" size={48} />
+              <LibraryBig  className="text-[var(--color-secondary)] max-sm:w-8 max-sm:h-8" size={48} />
               <div>
-                <h3 className="font-semibold text-[var(--color-primary)]">Anna Daana</h3>
-                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Serving hot meals to communities in need.</p>
+                <h3 className="font-semibold text-[var(--color-primary)]">Book Donation Drive</h3>
+                <p className="text-[1.3rem] max-sm:text-sm text-gray-600">Providing books to underprivileged children</p>
               </div>
             </div>
           </div>
