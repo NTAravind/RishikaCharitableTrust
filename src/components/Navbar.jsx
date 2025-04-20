@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { HashLink } from 'react-router-hash-link';
+import { Link } from 'react-router-dom';
 import logo from'../images/logo.png';
 const scrollToFormAndDonate = () => {
   const formSection = document.querySelector('.f'); // the form container class
@@ -28,7 +29,7 @@ function Navbar() {
       
       {/* Desktop Navigation - Preserved exactly as original */}
       <div className="links hidden md:flex flex-row gap-20">
-      <link to ='/Gallery'>Gallery</link>
+      <Link to ='/Gallery'>Gallery</Link>
         <HashLink smooth to="/#stry">About Us</HashLink>
         <HashLink smooth to="/#prog">Initiatives</HashLink>
       </div>
