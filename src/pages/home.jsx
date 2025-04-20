@@ -86,7 +86,7 @@ const HomePage = () => {
        </div>
       {/* #################################################################################################################################### */}
 
-      <section className="stry">
+      <section id="stry" className="stry">
         <div className="grid grid-cols-6 max-sm:grid-cols-1 grid-rows-4 max-sm:grid-rows-auto gap-2 h-[60vh] max-sm:h-auto">
           <div className="col-start-1 col-span-3 max-sm:col-span-1 row-span-4 max-sm:row-span-1 flex flex-col gap-1 p-7 max-sm:p-4 rounded-2xl justify-center bg-blue-100/60 text-balance">
             <h1 className="text-5xl max-sm:text-3xl text-start">Our Story</h1>
