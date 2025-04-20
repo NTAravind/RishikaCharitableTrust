@@ -28,7 +28,7 @@ function Navbar() {
       
       {/* Desktop Navigation - Preserved exactly as original */}
       <div className="links hidden md:flex flex-row gap-20">
-        <a href="/gallery">Gallery</a>
+      <link to ='/Gallery'>Gallery</link>
         <HashLink smooth to="/#stry">About Us</HashLink>
         <HashLink smooth to="/#prog">Initiatives</HashLink>
       </div>
