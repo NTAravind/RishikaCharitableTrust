@@ -22,14 +22,14 @@ export default function TeamSection() {
     },
     {
       id: 3,
-      name: "Tejas B M",
+      name: "Ravi Kumar Jadhav",
       role: "Trustee",
       url: t4,
      
     },
     {
       id: 4,
-      name: "Ravi Kumar Jadhav",
+      name: "Tejas B M",
       role: "Trustee",
       url: t1,
 
