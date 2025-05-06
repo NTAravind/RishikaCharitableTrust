@@ -171,7 +171,7 @@ export default function VolunteerSection() {
                     <option value="anna">Anna Daana – Food Distribution</option>
                     <option value="vastra">Muttu Project –Education on woman sanitary Health</option>
                     
-                    <option value="mutru">Mutru Project – Youth & Agriculture</option>
+                    <option value="mutru">Plantation Drive – Youth & Agriculture</option>
                     <option value="amruth">Amruth Khel – Playgrounds & Child Welfare</option>
                     <option value="ewaste">E-Waste Collection – Sustainability</option>
                     <option value="jnana">Jnana Chethana – Education & Workshops</option>
