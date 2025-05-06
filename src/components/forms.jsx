@@ -170,7 +170,7 @@ export default function VolunteerSection() {
                     <option value="">Select an option</option>
                     <option value="anna">Anna Daana – Food Distribution</option>
                     <option value="vastra">Muttu Project –Education on woman sanitary Health</option>
-                    <option value="arogya">Arogya Daana – Health Support</option>
+                    
                     <option value="mutru">Mutru Project – Youth & Agriculture</option>
                     <option value="amruth">Amruth Khel – Playgrounds & Child Welfare</option>
                     <option value="ewaste">E-Waste Collection – Sustainability</option>
