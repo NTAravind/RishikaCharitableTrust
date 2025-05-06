@@ -7,7 +7,8 @@ import {CookingPot, Cross, CircleChevronRight, BookOpenText, School, HeartHandsh
   Shirt, Droplet, Stethoscope, Sprout, ToyBrick, Recycle, BookOpenCheck, Home,LibraryBig ,
   Trash} from 'lucide-react';
 import VolunteerSection from "../components/forms";
-
+import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 const scrollToVolunteerForm = () => {
   const formSection = document.querySelector('.f');
   if (formSection) {
@@ -43,6 +44,14 @@ const HomePage = () => {
           }
         `}
       </style>
+      <Helmet>
+        <title>Rishika Charitable Trust | Empowering Karnataka</title>
+        <meta name="description" content="Join Rishika Charitable Trust in spreading compassion through food donation, education, and healthcare across Karnataka." />
+        <meta name="keywords" content="Charity, Karnataka NGO, Volunteer, Donate, Food Donation, Education Support, Healthcare, Community Service" />
+        <meta name="author" content="Rishika Charitable Trust" />
+        <link rel="canonical" href="https://rishikacharitabletrust.co.in/" />
+      </Helmet>
+
       <div className="view ">
       <section className="hero  grid grid-cols-3 max-sm:grid-cols-1 grid-rows-3 max-sm:grid-rows-auto mt-5 gap-2">
         <div className="col-start-1 font-semibold col-span-2 max-sm:col-span-1 row-start-1 row-span-2 max-sm:row-span-1 bg-blue-50 bg-contain bg-repeat p-15 max-sm:p-4 rounded-2xl self-center ">
@@ -174,7 +183,8 @@ const HomePage = () => {
 
       {/* #################################################################################################################################### */}
 
-      <section id="prog" className="prog bloc" className="prog">
+ <Link  to='/Gallery'>
+ <section id="prog" className="prog bloc">
         <h1 className="text-5xl max-sm:text-3xl w-fit m-auto my-10 max-sm:my-5 font-medium bloc">
           Our Impact Programs
         </h1>
@@ -252,6 +262,7 @@ const HomePage = () => {
         </section>
       </section>
 
+ </Link>
       {/* #################################################################################################################################### */}
 
       <section className="f max-sm:-mx-2 bloc ">

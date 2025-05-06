@@ -7,6 +7,7 @@ import Gallery from './pages/gallery';
 function App(){
   return(
 <>
+
 <div className="relative">
 
 <Navbar />
