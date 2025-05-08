@@ -1,4 +1,4 @@
-import t1 from '../images/team/Untitled.jpg';
+import t1 from '../images/team/untitled.jpg';
 import t2 from '../images/team/1.jpg';
 import t3 from '../images/team/2.jpg';
 import t4 from '../images/team/3.jpg';
